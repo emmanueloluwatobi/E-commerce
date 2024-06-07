@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    title    -->
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/favicon-32x32.png" type="png/image">
+</head>
+<body class="body">
+    <div id="header" class="flex-center">
+        <div class="left-header flex-center">
+            <div class="logo flex-center">
+                <img src="image/icon-menu.svg" alt="" class="meun">
+                <img src="image/logo.svg" alt="">
+            </div>
+            <div class="links">
+                <ul class="flex-center">
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-header flex-center">
+            <div class="cart" id="carts">
+                <img src="image/icon-cart.svg" alt="Cart">
+                <div class="notification"></div>
+                <div class="cart-dropdown">
+                    <h2>Cart</h2>
+                    <hr>
+                    <div class="cart-info" id="cart-container">
+                        <p>Your cart is empty</p>
+                    </div>
+                </div> 
+            </div>
+            <div class="user">
+                <img src="image/image-avatar.png" alt="User">
+            </div>
+        </div>
+    </div>
+    <div id="main-page" class="flex-center">
+        <div class="left-main-page">
+            <div class="left-page flex-center">
+                <div class="product-img flex-center">
+                    <img src="image/image-product-1.jpg" alt="" id="currentImage">
+                </div>
+                <div class="thumbnail-images flex-center">
+                    <img class="thumbnail" src="image/image-product-1-thumbnail.jpg" alt="" data-big="image/image-product-1.jpg">
+                    <img class="thumbnail" src="image/image-product-2-thumbnail.jpg" alt="" data-big="image/image-product-2.jpg">
+                    <img class="thumbnail" src="image/image-product-3-thumbnail.jpg" alt="" data-big="image/image-product-3.jpg">
+                    <img class="thumbnail" src="image/image-product-4-thumbnail.jpg" alt="" data-big="image/image-product-4.jpg">
+                </div>
+            </div>
+            <div class="modal-details flex-center">
+                <div class="modal-body">
+                    <img src="image/icon-close.svg" alt="" class="close-modal-btn">
+                    <div class="modal-images">
+                        <img src="image/icon-previous.svg" alt="" class="previous-btn">
+                        <img src="image/image-product-1.jpg" alt="" class="modal-current-image" id="modalCurrentImage">
+                        <img src="image/icon-next.svg" alt="" class="next-btn">
+                    </div>
+                    <div class="modal-thumbnail">
+                        <img class="small-modal-thumbnail" src="image/image-product-1-thumbnail.jpg" alt="" modal-data-big="image/image-product-1.jpg">
+                        <img class="small-modal-thumbnail" src="image/image-product-2-thumbnail.jpg" alt="" modal-data-big="image/image-product-2.jpg">
+                        <img class="small-modal-thumbnail" src="image/image-product-3-thumbnail.jpg" alt="" modal-data-big="image/image-product-3.jpg">
+                        <img class="small-modal-thumbnail" src="image/image-product-4-thumbnail.jpg" alt="" modal-data-big="image/image-product-4.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-main-page" id="product-info">
+            <h3>SNEAKER COMPANY</h3>
+            <h1>Fall Limited Edition Sneakers</h1>
+            <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+            <div class="price-tag">
+                <div class="price flex-center">
+                    <h2 class="product-price" data-price="125">$125.00</h2>
+                    <h2>50%</h2>
+                </div>
+                <p class="wrong-price">$250.00</p>
+            </div>
+            <div class="cart-section flex-center">
+                <div class="quality-btns flex-center">
+                    <button id="negative" class="negative-sign">-</button>
+                    <button id="display">0</button>
+                    <button id="positive" class="positive-sign">+</button>
+                </div>
+                <div class="add-to-cart flex-center" id="addtocart">
+                    <img src="image/icon-cart.svg" alt=""><h3>Add to cart</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
